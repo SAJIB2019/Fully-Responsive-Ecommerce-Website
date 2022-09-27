@@ -27,6 +27,12 @@ const BloggingHeroSection = styled.div`
 
 const SingleBlogMain = styled.div`
   padding: 200px 150px 0 150px;
+  @media screen and (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4px;
+    padding: 200px 0px 0 10px;
+  }
 `;
 const BlogBox = styled.div`
   display: flex;
@@ -43,6 +49,11 @@ const BlogBox = styled.div`
     color: #c9cbce;
     z-index: -1;
   }
+  @media screen and (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4px;
+  }
 `;
 const ImageSection = styled.div`
   width: 50%;
@@ -52,6 +63,9 @@ const ImageSection = styled.div`
     height: 300px;
     object-fit: cover;
     object-position: center;
+  }
+  @media screen and (max-width: 600px) {
+    width: 95vw;
   }
 `;
 const WriteSection = styled.div`
@@ -86,6 +100,9 @@ const WriteSection = styled.div`
       color: #088178;
       cursor: pointer;
     }
+  }
+  @media screen and (max-width: 600px) {
+    width: 90vw;
   }
 `;
 const Pagination = styled.div`

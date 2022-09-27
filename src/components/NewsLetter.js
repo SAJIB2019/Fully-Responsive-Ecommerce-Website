@@ -13,6 +13,12 @@ const NewsLetterContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   padding: 0 110px;
+  @media screen and (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+    padding: 0 45px;
+  }
 `;
 const NewsLetterHeading = styled.div`
   display: flex;
@@ -35,7 +41,10 @@ const NewsLetterHeading = styled.div`
     color: #ffbd27;
   }
   @media screen and (max-width: 600px) {
-    padding: 30px 0;
+    h2 {
+      font-size: 28px;
+      padding: 0px 0;
+    }
   }
 `;
 const NewsLetterInput = styled.div`
@@ -71,6 +80,14 @@ const NewsLetterInput = styled.div`
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     margin: 20px 0;
+  }
+  @media screen and (max-width: 600px) {
+    button {
+      margin-bottom: 80px;
+    }
+    input {
+      margin-bottom: 80px;
+    }
   }
 `;
 

@@ -49,6 +49,8 @@ const ContactDetail = styled.div`
     color: grey;
   }
   @media screen and (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     width: 100vw;
     text-align: center;
   }
@@ -70,16 +72,13 @@ const DetailIcons = styled.div`
     font-size: 20px;
     color: grey;
   }
-  @media screen and (max-width: 600px) {
-    width: 100vw;
-    li {
-      margin: 0 auto;
-    }
-  }
 `;
 const ContactGoogleMap = styled.div``;
 const ContactInputSection = styled.div`
   padding: 0 150px;
+  @media screen and (max-width: 600px) {
+    padding: 0 0px;
+  }
 `;
 const ContactInputSingle = styled.div`
   display: flex;
@@ -89,6 +88,11 @@ const ContactInputSingle = styled.div`
   border: 1px solid grey;
   padding: 40px;
   margin-bottom: 40px;
+  @media screen and (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100vw;
+  }
 `;
 const InputSection = styled.div`
   display: flex;
@@ -167,7 +171,6 @@ const Member = styled.div`
     line-height: 25px;
   }
 `;
-
 const ContactComponent = () => {
   return (
     <ContactComponentMain>

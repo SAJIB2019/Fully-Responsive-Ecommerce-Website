@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const MainFooter = styled.div`
-  padding: 0 110px;
+  padding: 0 100px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #e3e6f3;
@@ -12,6 +12,12 @@ const FooterContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 20px;
+  @media screen and (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+    justify-content: space-around;
+  }
 `;
 const ColumnOne = styled.div`
   display: flex;
