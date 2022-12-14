@@ -1,7 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-const ContactComponentMain = styled.div``;
+const ContactComponentMain = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+`;
 const ContactHeroSection = styled.div`
   background-image: url("images/banner/b20.jpg");
   background-repeat: no-repeat;
@@ -15,6 +23,9 @@ const ContactHeroSection = styled.div`
   height: 40vh;
   position: relative;
   top: 6.8rem;
+  @media screen and (max-width: 768px) {
+    background-size: 400px;
+  }
 `;
 const ContactBox = styled.div`
   display: flex;
@@ -23,10 +34,12 @@ const ContactBox = styled.div`
   padding: 150px;
   position: relative;
   top: 3rem;
-  @media screen and (max-width: 600px) {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: space-around;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
   }
 `;
 const ContactDetail = styled.div`
@@ -48,11 +61,26 @@ const ContactDetail = styled.div`
     padding-bottom: 20px;
     color: grey;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 100vw;
     text-align: center;
+    span {
+      font-size: 16px;
+      padding-bottom: 20px;
+      color: grey;
+    }
+    h2 {
+      font-size: 16px;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: 25px;
+      padding-bottom: 20px;
+      color: grey;
+    }
   }
 `;
 const DetailIcons = styled.div`
@@ -72,12 +100,29 @@ const DetailIcons = styled.div`
     font-size: 20px;
     color: grey;
   }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+    p {
+      font-size: 15px;
+      color: grey;
+    }
+  }
 `;
-const ContactGoogleMap = styled.div``;
+const ContactGoogleMap = styled.div`
+  @media screen and (max-width: 600px) {
+  }
+`;
 const ContactInputSection = styled.div`
   padding: 0 150px;
-  @media screen and (max-width: 600px) {
-    padding: 0 0px;
+  @media screen and (max-width: 768px) {
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
   }
 `;
 const ContactInputSingle = styled.div`
@@ -88,10 +133,9 @@ const ContactInputSingle = styled.div`
   border: 1px solid grey;
   padding: 40px;
   margin-bottom: 40px;
-  @media screen and (max-width: 600px) {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100vw;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
   }
 `;
 const InputSection = styled.div`
@@ -199,7 +243,7 @@ const ContactComponent = () => {
         <ContactGoogleMap>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3186.9539456743505!2d-1.2543668000000001!3d51.754816399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a9ef8c485b%3A0xd2ff1883a001afed!2sUniversity%20of%20Oxford!5e1!3m2!1sen!2sbd!4v1662272107269!5m2!1sen!2sbd"
-            width="650"
+            width="380"
             height="300"
             allowfullscreen=""
             loading="lazy"

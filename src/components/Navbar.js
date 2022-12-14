@@ -16,7 +16,7 @@ const MainNav = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     padding: 0 2px;
   }
 `;

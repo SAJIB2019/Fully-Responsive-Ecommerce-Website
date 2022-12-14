@@ -5,29 +5,28 @@ const MainFeature = styled.div`
   display: flex;
   width: 100vw;
   padding: 0 110px;
-  padding-top: 200px;
+  padding-top: 160px;
   align-items: center;
 
-  @media screen and (max-width: 1024px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-  }
-  @media screen and (max-width: 600px) {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
+    justify-content: center;
   }
 `;
 const FeatureBox = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  margin: 30px;
+  margin: 0 16px;
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
   border: 1px solid #cce7d0;
   &:hover {
     box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+  }
+  @media screen and (max-width: 768px) {
+    margin: 8px 0;
   }
 `;
 const H4 = styled.h4`

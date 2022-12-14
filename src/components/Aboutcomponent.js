@@ -2,8 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const AboutcomponentMain = styled.div`
-  @media all and (max-width: 600px) {
-    width: 100%;
+  @media all and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 const AboutHeroSection = styled.div`
@@ -27,6 +30,17 @@ const AboutHeroSection = styled.div`
     color: white;
     font-size: 25px;
   }
+  @media all and (max-width: 768px) {
+    width: 100%;
+    h2 {
+      color: white;
+      font-size: 35px;
+    }
+    p {
+      color: white;
+      font-size: 15px;
+    }
+  }
 `;
 const AboutSingleSection = styled.div`
   display: flex;
@@ -34,9 +48,11 @@ const AboutSingleSection = styled.div`
   top: 3rem;
   padding: 200px;
   @media screen and (max-width: 600px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0px;
   }
 `;
 const ImageSection = styled.div`
@@ -49,12 +65,12 @@ const ImageSection = styled.div`
     object-position: center;
   }
   @media screen and (max-width: 600px) {
-    width: 100vw;
+    width: 100%;
     align-items: center;
     margin-right: 0px;
     img {
       position: relative;
-      width: 40%;
+      width: 100%;
       object-fit: center;
     }
   }

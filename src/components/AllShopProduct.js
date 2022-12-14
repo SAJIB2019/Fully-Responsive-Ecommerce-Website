@@ -8,6 +8,11 @@ const AllFeatureProduct = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const FeatureProduct = styled.div`
@@ -91,6 +96,11 @@ const AllNewArrivalProduct = styled.div`
   position: relative;
   top: 10rem;
   padding-bottom: 13rem;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 const NewArrivalProduct = styled.div`
   display: flex;

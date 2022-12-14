@@ -8,9 +8,11 @@ const AllFeatureProduct = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
   }
 `;
 const FeatureHeading = styled.div`

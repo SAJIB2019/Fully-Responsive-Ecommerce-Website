@@ -2,27 +2,21 @@ import React from "react";
 import styled from "styled-components";
 
 const MainCallToAction = styled.div`
-  padding: 0 110px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  @media screen and (max-width: 600px) {
-    padding: 0 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  @media screen and (max-width: 768px) {
   }
 `;
 const CallToActionContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
+    justify-content: center;
   }
 `;
-const CallToActionOFirst = styled.div`
+const CallToActionFirst = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,6 +64,9 @@ const CallToActionOFirst = styled.div`
       color: white;
       border: none;
     }
+  }
+  @media screen and (max-width: 768px) {
+    min-width: 100%;
   }
 `;
 
@@ -121,18 +118,21 @@ const CallToActionTwo = styled.div`
       border: none;
     }
   }
+  @media screen and (max-width: 768px) {
+    min-width: 100%;
+  }
 `;
 
 const CallToAction = () => {
   return (
     <MainCallToAction>
       <CallToActionContainer>
-        <CallToActionOFirst>
+        <CallToActionFirst>
           <h5>crozay deals</h5>
           <h2>buy 1 get 1 free</h2>
           <p>The best classic dress is on sale at cara</p>
           <button>Learn More</button>
-        </CallToActionOFirst>
+        </CallToActionFirst>
         <CallToActionTwo>
           <h5>spring/summer</h5>
           <h2>buy 1 get 1 free</h2>

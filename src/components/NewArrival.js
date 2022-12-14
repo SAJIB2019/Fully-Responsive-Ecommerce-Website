@@ -9,6 +9,11 @@ const AllNewArrivalProduct = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 const NewArrivalHeading = styled.div`
   display: flex;

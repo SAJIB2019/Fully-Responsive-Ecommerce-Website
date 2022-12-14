@@ -2,22 +2,19 @@ import React from "react";
 import styled from "styled-components";
 
 const MainTextBanner = styled.div`
-  padding: 0 110px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  @media screen and (max-width: 600px) {
-    padding: 0 0px;
-    width: 100vw;
+  padding: 50px 110px;
+  @media screen and (max-width: 768px) {
+    padding: 50px 0;
   }
 `;
 const TextBannerContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  @media screen and (max-width: 600px) {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 const FirstTextBanner = styled.div`
@@ -25,21 +22,26 @@ const FirstTextBanner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: 50px;
-  min-width: 450px;
-  height: 25vh;
-  background-position: center;
-  background-repeat: no-repeat;
+  align-items: center;
   background-size: cover;
-  margin: 15px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 450px;
+  height: 20vh;
   h2 {
     color: white;
     padding-bottom: 10px;
     font-weight: 600px;
+    font-size: 16px;
   }
   h3 {
     color: #8a1a1a;
+  }
+  @media screen and (max-width: 768px) {
+    min-width: 350px;
+    h2 {
+      font-size: 16px;
+    }
   }
 `;
 const SecondTextBanner = styled.div`
@@ -47,21 +49,27 @@ const SecondTextBanner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: 50px;
-  min-width: 450px;
-  height: 25vh;
-  background-position: center;
-  background-repeat: no-repeat;
+  align-items: center;
   background-size: cover;
-  margin: 15px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 450px;
+  height: 20vh;
+  margin: 10px 0;
   h2 {
     color: white;
     padding-bottom: 10px;
     font-weight: 600px;
+    font-size: 16px;
   }
   h3 {
     color: #8a1a1a;
+  }
+  @media screen and (max-width: 768px) {
+    min-width: 350px;
+    h2 {
+      font-size: 16px;
+    }
   }
 `;
 const ThirdTextBanner = styled.div`
@@ -69,21 +77,26 @@ const ThirdTextBanner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: 50px;
-  min-width: 450px;
-  height: 25vh;
-  background-position: center;
-  background-repeat: no-repeat;
+  align-items: center;
   background-size: cover;
-  margin: 15px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 450px;
+  height: 20vh;
   h2 {
     color: white;
     padding-bottom: 10px;
     font-weight: 600px;
+    font-size: 16px;
   }
   h3 {
     color: #8a1a1a;
+  }
+  @media screen and (max-width: 768px) {
+    min-width: 350px;
+    h2 {
+      font-size: 16px;
+    }
   }
 `;
 
