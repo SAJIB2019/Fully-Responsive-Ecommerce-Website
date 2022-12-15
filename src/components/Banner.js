@@ -38,6 +38,17 @@ const MainBanner = styled.div`
       color: white;
     }
   }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      color: white;
+      font-size: 20px;
+      padding: 10px 0;
+    }
+  }
 `;
 const Banner = () => {
   return (

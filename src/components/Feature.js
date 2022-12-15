@@ -7,6 +7,7 @@ const MainFeature = styled.div`
   padding: 0 110px;
   padding-top: 160px;
   align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 768px) {
     display: flex;
